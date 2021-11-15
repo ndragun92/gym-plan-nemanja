@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  scrollbar-color: black white;
+  scrollbar-width: thin;
+  *::-webkit-scrollbar-track
+  {
+    @apply bg-gray-900;
+  }
+
+  *::-webkit-scrollbar
+  {
+    @apply w-2 bg-gray-50;
+  }
+
+  *::-webkit-scrollbar-thumb
+  {
+    @apply bg-black border-gray-900 border border-solid;
+  }
+  @apply bg-black text-gray-50;
+}
+
+.body--no-scroll {
+  @apply overflow-hidden
+}
