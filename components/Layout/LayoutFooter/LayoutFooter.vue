@@ -1,6 +1,6 @@
 <template>
   <footer class="layout-footer">
-    vanino-bielefeld.de &copy; Vanino. All Rights Reserved
+    Nemanja Dragun &copy; {{returnYear}}. All Rights Reserved
   </footer>
 </template>
 
@@ -8,6 +8,9 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 @Component
 export default class LayoutFooter extends Vue {
+  get returnYear (): number {
+    return new Date().getFullYear()
+  }
 }
 </script>
 

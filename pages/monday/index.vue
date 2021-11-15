@@ -1,11 +1,13 @@
 <template>
   <div>
-    Homepage
+    Monday schedule
   </div>
 </template>
-<script lang="ts">
+
+<script>
 import { Component, Vue } from 'nuxt-property-decorator'
+
 @Component
-export default class PageIndex extends Vue {
+export default class PageMonday extends Vue {
 }
 </script>

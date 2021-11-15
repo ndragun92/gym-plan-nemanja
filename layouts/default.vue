@@ -5,7 +5,7 @@
     <layout-footer />
     <transition leave-active-class="animated fadeOut">
       <div v-if="layoutLoading" class="layout-loading">
-        <nuxt-img src="/images/logo-inverted.png" width="100" />
+        <nuxt-img src="/images/fitx_logo.svg" width="100" />
         <div class="layout-loading__loader" />
       </div>
     </transition>
@@ -27,6 +27,16 @@ export default class DefaultLayout extends Vue {
   layoutLoading: boolean = false
 
   // Hooks
+  async created () {
+    switch (this.currentDay) {
+      case 1:
+        await this.$router.push('/monday')
+        break
+      default:
+        await this.$router.push('/monday')
+    }
+  }
+
   mounted () {
     document.body.classList.add('body--no-scroll')
     this.$nextTick(() => {
@@ -35,6 +45,11 @@ export default class DefaultLayout extends Vue {
         document.body.classList.remove('body--no-scroll')
       }, 2000)
     })
+  }
+
+  // Getters
+  get currentDay (): number {
+    return new Date().getDay()
   }
 }
 </script>
