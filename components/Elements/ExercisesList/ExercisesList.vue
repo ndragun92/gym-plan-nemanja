@@ -12,13 +12,15 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import ExerciseModal from '@/components/Modals/ExerciseModal/ExerciseModal.vue'
 import { ExerciseInterface } from '~/interfaces/ExercisesInterface'
 import ExercisesListItem from '~/components/Elements/ExercisesListItem/ExercisesListItem.vue'
 import { GlobalEventBus, GlobalEvents } from '~/events/GlobalEvents'
 
 @Component({
-  components: { ExercisesListItem, ExerciseModal }
+  components: {
+    ExercisesListItem,
+    ExerciseModal: () => import('@/components/Modals/ExerciseModal/ExerciseModal.vue')
+  }
 })
 export default class ExercisesList extends Vue {
   @Prop({ required: true })
