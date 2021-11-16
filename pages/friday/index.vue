@@ -279,14 +279,11 @@ export default class PageFriday extends Vue {
     }
   ]
 
-  created () {
+  mounted () {
     const storedData = localStorage.getItem(this.$route.name as string)
     if (storedData && JSON.parse(storedData).length === this.exercises.length) {
       this.exercises = JSON.parse(storedData)
     }
-  }
-
-  mounted () {
     GlobalEventBus.$on(GlobalEvents.ResetGlobalData, this.onResetData)
   }
 
