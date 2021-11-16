@@ -7,7 +7,7 @@
     <layout-footer />
     <transition leave-active-class="animated fadeOut">
       <div v-if="layoutLoading" class="layout-loading">
-        <nuxt-img src="/images/fitx_logo.svg" width="100" />
+        <img src="/images/fitx_logo.svg" style="width: 100px">
         <div class="layout-loading__loader" />
       </div>
     </transition>
@@ -26,7 +26,7 @@ import LayoutFooter from '~/components/Layout/LayoutFooter/LayoutFooter.vue'
 })
 export default class DefaultLayout extends Vue {
   // Data
-  layoutLoading: boolean = false
+  layoutLoading: boolean = true
 
   // Hooks
   async created () {
