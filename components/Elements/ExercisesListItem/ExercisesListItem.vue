@@ -1,9 +1,8 @@
 <template>
   <div
     class="relative flex items-center gap-2 bg-black bg-opacity-50"
-    @click="$emit('select', exercise)"
   >
-    <div>
+    <div @click="$emit('select', exercise)">
       <img class="w-20 h-20" :src="exercise.image">
     </div>
     <div class="flex gap-1 flex-col p-2">

@@ -21,88 +21,114 @@ export default class PageFriday extends Vue {
   exercises: ExerciseInterface[] = [
     {
       id: 1,
-      name: 'Barbell bench press',
-      image: '/images/exercises/gif/barbell-bench-press.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      name: 'Dumbbell Curl',
+      image: '/images/exercises/gif/dumbbell-curl.gif',
+      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
       expanded: false,
       description: [
         {
           id: 1,
-          text: 'Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.'
+          text: 'Stand up straight with a dumbbell in each hand at arm\'s length.'
         },
         {
           id: 2,
-          text: 'Lower the bar to your mid chest'
+          text: 'Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.'
         },
         {
           id: 3,
-          text: 'Raise the bar until you\'ve locked your elbows.'
+          text: 'Lower to original position and repeat with opposite arm'
         }
       ],
       sets: []
     },
     {
       id: 2,
-      name: 'Barbell bench press narrow',
-      image: '/images/exercises/gif/barbell-bench-press.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      name: 'Hammer Curl',
+      image: '/images/exercises/gif/hammer-curl.gif',
+      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
       expanded: false,
       description: [
         {
           id: 1,
-          text: 'Lay flat on the bench with your feet on the ground. With narrow arms unrack the bar.'
+          text: 'Hold the dumbbells with a neutral grip (thumbs facing the ceiling).'
         },
         {
           id: 2,
-          text: 'Lower the bar to your mid chest'
+          text: 'Slowly lift the dumbbell up to chest height'
         },
         {
           id: 3,
-          text: 'Raise the bar until you\'ve locked your elbows.'
+          text: 'Return to starting position and repeat.'
         }
       ],
       sets: []
     },
     {
       id: 3,
-      name: 'Dumbbell bench press',
-      image: '/images/exercises/gif/dumbbell-bench-press.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      name: 'Barbell Curl',
+      image: '/images/exercises/gif/barbell-curl.gif',
+      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
       expanded: false,
       description: [
         {
           id: 1,
-          text: 'Lay flat on the bench with your feet on the ground. Raise the dumbbells until you have straight arms.'
+          text: 'While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out.'
         },
         {
           id: 2,
-          text: 'Lower the dumbbells to your mid chest'
+          text: 'Continue the movement until your biceps are fully contracted and the bar is at shoulder level.'
         },
         {
           id: 3,
-          text: 'Raise the dumbbells until you\'ve locked your elbows.'
+          text: 'Hold the contracted position for a second and squeeze the biceps hard.'
+        },
+        {
+          id: 4,
+          text: 'Slowly bring the weight back down to the starting position.'
         }
       ],
       sets: []
     },
     {
       id: 4,
-      name: 'Dumbbell bench press narrow',
-      image: '/images/exercises/gif/dumbbell-bench-press.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      name: 'Back Barbell Wrist Curl',
+      image: '/images/exercises/gif/back-barbell-wrist-curl.gif',
+      explainImage: '/images/exercises/gif/wrist-curl-explain.png',
       expanded: false,
       description: [
         {
           id: 1,
-          text: 'Lay flat on the bench with your feet on the ground. Raise the dumbbells close to your body until you have straight arms.'
+          text: 'Stand straight and hold the barbell behind you using a pronated grip with your hands and feet shoulder-width apart.'
         },
         {
           id: 2,
-          text: 'Lower the dumbbells to your mid chest'
+          text: 'Slowly curl your wrists in a semi-circular motion upwards.'
         },
         {
           id: 3,
-          text: 'Raise the dumbbells until you\'ve locked your elbows.'
+          text: 'Hold the barbell at the apex of the motion and then slowly lower the barbell back down to starting position.'
+        }
+      ],
+      sets: []
+    },
+    {
+      id: 5,
+      name: 'Reverse Curl',
+      image: '/images/exercises/gif/reverse-curl.gif',
+      explainImage: '/images/exercises/gif/wrist-curl-explain.png',
+      expanded: false,
+      description: [
+        {
+          id: 1,
+          text: 'Grab an EZ bar (or barbell) with a shoulder width pronated (overhand) grip.'
+        },
+        {
+          id: 2,
+          text: 'Curl the weight until your forearms and your biceps touch one another.'
+        },
+        {
+          id: 3,
+          text: 'Lower the weight in a controlled manner and repeat.'
         }
       ],
       sets: []
