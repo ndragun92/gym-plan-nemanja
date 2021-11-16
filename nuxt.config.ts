@@ -96,6 +96,13 @@ export default {
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
+  manifest: {
+    title: 'Gym Workout Plan',
+    name: 'Gym Workout Plan',
+    description: 'Going to the gym is great for your body, but it’s also great for your mind',
+    lang: 'en',
+    theme_color: '#080c13'
+  },
   build: {
   }
 }
