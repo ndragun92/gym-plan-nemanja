@@ -1,7 +1,9 @@
 <template>
   <div>
     <layout-navigation />
-    <Nuxt />
+    <div class="mb-12">
+      <Nuxt />
+    </div>
     <layout-footer />
     <transition leave-active-class="animated fadeOut">
       <div v-if="layoutLoading" class="layout-loading">
@@ -31,6 +33,9 @@ export default class DefaultLayout extends Vue {
     switch (this.currentDay) {
       case 1:
         await this.$router.push('/monday')
+        break
+      case 20:
+        await this.$router.push('/tuesday')
         break
       default:
         await this.$router.push('/monday')

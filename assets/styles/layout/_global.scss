@@ -5,7 +5,7 @@
 }
 
 html, body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   scrollbar-color: black white;
   scrollbar-width: thin;
   *::-webkit-scrollbar-track
@@ -22,7 +22,7 @@ html, body {
   {
     @apply bg-black border-gray-900 border border-solid;
   }
-  @apply bg-black text-gray-50;
+  @apply bg-gray-900 text-gray-50;
 }
 
 .body--no-scroll {

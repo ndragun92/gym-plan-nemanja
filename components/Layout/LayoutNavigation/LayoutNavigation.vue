@@ -5,12 +5,14 @@
         <nuxt-img src="/images/fitx_logo.svg" width="40" />
       </div>
       <div>
-        <ul class="flex items-center gap-2">
+        <ul class="flex items-center gap-2 text-sm">
           <li>
-            <a href="#">Mon.</a>
+            <nuxt-link to="/monday">
+              Mon.
+            </nuxt-link>
           </li>
           <li>
-            <a href="#">Tue.</a>
+            <nuxt-link to="/tuesday">Tue.</nuxt-link>
           </li>
           <li>
             <a href="#">Wed.</a>
@@ -53,6 +55,9 @@ export default class LayoutNavigation extends Vue {
 
 <style lang="scss" scoped>
 .layout-navigation {
-  @apply px-6
+  @apply px-6 bg-black bg-opacity-50;
+  .nuxt-link-active {
+    @apply text-yellow-600;
+  }
 }
 </style>

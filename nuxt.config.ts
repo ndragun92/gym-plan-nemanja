@@ -1,4 +1,8 @@
 export default {
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -33,7 +37,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'
       },
       // Docs: https://material.io/resources/icons/?style=baseline
       {
