@@ -37,6 +37,10 @@ export default class ExercisesList extends Vue {
   }
 
   // Methods
+  localStorageUpdate () {
+    localStorage.setItem(this.$route.name as string, JSON.stringify(this.exercises))
+  }
+
   onUpdateStorage () {
     this.exercises.forEach((obj) => {
       if (obj.sets.length) {
@@ -45,7 +49,7 @@ export default class ExercisesList extends Vue {
         obj.lastReps = lastSet.reps
       }
     })
-    localStorage.setItem(this.$route.name as string, JSON.stringify(this.exercises))
+    this.localStorageUpdate()
   }
 
   onResetData () {
@@ -55,7 +59,7 @@ export default class ExercisesList extends Vue {
         sets: []
       }
     })
-    localStorage.setItem(this.$route.name as string, JSON.stringify(this.exercises))
+    this.localStorageUpdate()
   }
 }
 </script>

@@ -62,14 +62,17 @@
               </button>
             </div>
           </div>
-          <div>
+          <div class="flex items-center">
             <button
               type="button"
-              class="w-full h-12 uppercase text-sm font-bold"
+              class="flex-grow min-w-0 h-12 uppercase text-sm font-bold"
               :class="[set.completed ? 'bg-green-500 hover:bg-green-600': 'bg-yellow-500 hover:bg-yellow-600']"
               @click="set.completed = !set.completed"
               v-text="`${set.completed ? 'Completed' : 'Complete set'}`"
             />
+            <button type="button" class="w-12 h-12 bg-red-500 hover:bg-red-600" @click="onDeleteSet(setIndex)">
+              <i class="material-icons">delete</i>
+            </button>
           </div>
         </li>
       </ul>
@@ -115,6 +118,14 @@ export default class ExerciseModal extends Vue {
       el.scrollTop = el.scrollHeight
     })
     GlobalEventBus.$emit(GlobalEvents.UpdateStorage)
+  }
+
+  onDeleteSet (setIndex: number) {
+    const confirmed = confirm(`Delete set ${setIndex + 1}`)
+    if (confirmed) {
+      const exerciseData = this.exercise as ExerciseInterface
+      exerciseData.sets.splice(setIndex, 1)
+    }
   }
 }
 </script>
