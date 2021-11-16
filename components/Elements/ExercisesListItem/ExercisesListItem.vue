@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center gap-2 bg-black bg-opacity-50"
+    class="relative flex items-center gap-2 bg-black bg-opacity-50"
     @click="$emit('select', exercise)"
   >
     <div>
@@ -9,6 +9,10 @@
     <div class="flex gap-1 flex-col p-2">
       <h2 class="text-sm" v-text="exercise.name" />
       <p class="text-xs" :class="[isCompleted ? 'text-green-400': 'text-gray-400']" v-text="isCompleted ? 'Completed' : 'Pending'" />
+      <span
+        class="absolute bottom-1 right-1 text-xs text-yellow-500"
+        v-text="`${completedSetsCount}/${exercise.sets.length} sets`"
+      />
     </div>
   </div>
 </template>
@@ -32,6 +36,10 @@ export default class ExercisesListItem extends Vue {
 
   get isCompleted (): boolean {
     return !!this.exercise.sets.length && this.exercise.sets.filter(obj => obj.completed).length === this.exercise.sets.length
+  }
+
+  get completedSetsCount (): number {
+    return this.exercise.sets.filter(obj => obj.completed).length
   }
 }
 </script>

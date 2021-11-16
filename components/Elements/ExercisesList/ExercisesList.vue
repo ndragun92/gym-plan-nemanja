@@ -24,16 +24,14 @@ export default class ExercisesList extends Vue {
   @Prop({ required: true })
   exercises!: ExerciseInterface[]
 
-  exercise = this.exercises[0]
+  exercise = null
 
   mounted () {
     GlobalEventBus.$on(GlobalEvents.UpdateStorage, this.onUpdateStorage)
-    GlobalEventBus.$on(GlobalEvents.ResetGlobalData, this.onResetData)
   }
 
   beforeDestroy () {
     GlobalEventBus.$off(GlobalEvents.UpdateStorage, this.onUpdateStorage)
-    GlobalEventBus.$off(GlobalEvents.ResetGlobalData, this.onResetData)
   }
 
   // Methods
@@ -47,16 +45,6 @@ export default class ExercisesList extends Vue {
         const lastSet = obj.sets[obj.sets.length - 1]
         obj.lastWeight = lastSet.weight
         obj.lastReps = lastSet.reps
-      }
-    })
-    this.localStorageUpdate()
-  }
-
-  onResetData () {
-    this.exercises = this.exercises.map((obj) => {
-      return {
-        ...obj,
-        sets: []
       }
     })
     this.localStorageUpdate()
