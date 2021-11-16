@@ -17,13 +17,19 @@
             </nuxt-link>
           </li>
           <li>
-            <a href="#">Wed.</a>
+            <nuxt-link to="/wednesday">
+              Wed.
+            </nuxt-link>
           </li>
           <li>
-            <a href="#">Thu.</a>
+            <nuxt-link to="/thursday">
+              Thu.
+            </nuxt-link>
           </li>
           <li>
-            <a href="#">Fri.</a>
+            <nuxt-link to="/friday">
+              Fri.
+            </nuxt-link>
           </li>
           <li class="ml-4">
             <button type="button" class="bg-gray-900 w-8 h-8 rounded flex items-center justify-center text-center" @click="onResetData">

@@ -2,7 +2,7 @@
   <div class="my-2">
     <div class="container mx-auto px-2">
       <h1 class="text-lg my-2 text-center">
-        Arms | Shoulders | Abs
+        Chest | Back | Abs
       </h1>
       <exercises-list :exercises="exercises" />
     </div>
@@ -17,7 +17,7 @@ import { GlobalEventBus, GlobalEvents } from '~/events/GlobalEvents'
 @Component({
   components: { ExercisesList }
 })
-export default class PageMonday extends Vue {
+export default class PageWednesday extends Vue {
   exercises: ExerciseInterface[] = [
     {
       id: 1,

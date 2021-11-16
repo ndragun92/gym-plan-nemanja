@@ -16,6 +16,6 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component
-export default class PageTuesday extends Vue {
+export default class PageThursday extends Vue {
 }
 </script>
