@@ -102,8 +102,8 @@ export default class ExerciseModal extends Vue {
   onAddSet (exercise: ExerciseInterface) {
     const date = new Date()
     const id = +`${date.getDate()}${date.getDay()}${date.getHours()}${date.getMinutes()}${date.getSeconds()}${date.getMilliseconds()}`
-    let weight = 0
-    let reps = 0
+    let weight = this.exercise?.lastWeight || 0
+    let reps = this.exercise?.lastReps || 0
     if (exercise.sets.length) {
       const lastExercise = exercise.sets[exercise.sets.length - 1]
       weight = lastExercise.weight

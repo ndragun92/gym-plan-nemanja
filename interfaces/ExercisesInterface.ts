@@ -11,6 +11,8 @@ export interface ExerciseInterface {
     image: string
     explainImage: string
     expanded: boolean
+    lastWeight?: number
+    lastReps?: number
     description: {
         id: number,
         text: string

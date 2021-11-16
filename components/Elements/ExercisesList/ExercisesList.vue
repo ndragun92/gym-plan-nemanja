@@ -28,14 +28,33 @@ export default class ExercisesList extends Vue {
 
   mounted () {
     GlobalEventBus.$on(GlobalEvents.UpdateStorage, this.onUpdateStorage)
+    GlobalEventBus.$on(GlobalEvents.ResetGlobalData, this.onResetData)
   }
 
   beforeDestroy () {
     GlobalEventBus.$off(GlobalEvents.UpdateStorage, this.onUpdateStorage)
+    GlobalEventBus.$off(GlobalEvents.ResetGlobalData, this.onResetData)
   }
 
   // Methods
   onUpdateStorage () {
+    this.exercises.forEach((obj) => {
+      if (obj.sets.length) {
+        const lastSet = obj.sets[obj.sets.length - 1]
+        obj.lastWeight = lastSet.weight
+        obj.lastReps = lastSet.reps
+      }
+    })
+    localStorage.setItem(this.$route.name as string, JSON.stringify(this.exercises))
+  }
+
+  onResetData () {
+    this.exercises = this.exercises.map((obj) => {
+      return {
+        ...obj,
+        sets: []
+      }
+    })
     localStorage.setItem(this.$route.name as string, JSON.stringify(this.exercises))
   }
 }

@@ -12,7 +12,9 @@
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/tuesday">Tue.</nuxt-link>
+            <nuxt-link to="/tuesday">
+              Tue.
+            </nuxt-link>
           </li>
           <li>
             <a href="#">Wed.</a>
@@ -23,6 +25,11 @@
           <li>
             <a href="#">Fri.</a>
           </li>
+          <li class="ml-4">
+            <button type="button" class="bg-gray-900 w-8 h-8 rounded flex items-center justify-center text-center" @click="onResetData">
+              <i class="material-icons text-red-500">restart_alt</i>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -31,6 +38,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import { GlobalEventBus, GlobalEvents } from '~/events/GlobalEvents'
 @Component
 export default class LayoutNavigation extends Vue {
   // Data
@@ -50,12 +58,20 @@ export default class LayoutNavigation extends Vue {
   getScrollPosition () {
     this.scrollPosition = window.scrollY
   }
+
+  onResetData () {
+    const confirmed = confirm(`Reset data for ${this.$route.name}`)
+
+    if (confirmed) {
+      GlobalEventBus.$emit(GlobalEvents.ResetGlobalData)
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .layout-navigation {
-  @apply px-6 bg-black bg-opacity-50;
+  @apply pl-6 pr-2 bg-black bg-opacity-50;
   .nuxt-link-active {
     @apply text-yellow-600;
   }
