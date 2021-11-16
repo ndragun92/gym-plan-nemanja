@@ -132,6 +132,150 @@ export default class PageFriday extends Vue {
         }
       ],
       sets: []
+    },
+    {
+      id: 6,
+      name: 'Squats',
+      image: '/images/exercises/gif/squats.gif',
+      explainImage: '/images/exercises/gif/squats-explain.png',
+      expanded: false,
+      description: [
+        {
+          id: 1,
+          text: 'Stand with your feet shoulder width apart.'
+        },
+        {
+          id: 2,
+          text: 'Flex your knees and hips and sit back into the squat while lowering your body'
+        },
+        {
+          id: 3,
+          text: 'Continue down to full depth'
+        },
+        {
+          id: 4,
+          text: 'Return to starting position.'
+        }
+      ],
+      sets: []
+    },
+    {
+      id: 7,
+      name: 'Forward Lunges',
+      image: '/images/exercises/gif/forward-lunges.gif',
+      explainImage: '/images/exercises/gif/squats-explain.png',
+      expanded: false,
+      description: [
+        {
+          id: 1,
+          text: 'Step forward with one leg.'
+        },
+        {
+          id: 2,
+          text: 'Lower your body until your rear knee nearly touches the ground.'
+        },
+        {
+          id: 3,
+          text: 'Ensure you remain upright, and your front knee stay above the front foot.'
+        },
+        {
+          id: 4,
+          text: 'Push off the floor with your front foot until you return to the starting position. Switch legs.'
+        }
+      ],
+      sets: []
+    },
+    {
+      id: 8,
+      name: 'Calf Raises',
+      image: '/images/exercises/gif/calf-raises.gif',
+      explainImage: '/images/exercises/gif/calf-raises-explain.png',
+      expanded: false,
+      description: [
+        {
+          id: 1,
+          text: 'Balance on the balls of your feet on the platform or plates, leaning forward to use the wall to assist with balance.'
+        },
+        {
+          id: 2,
+          text: 'Lower the heels of your feet towards the ground and pause, then push through the balls of your feet like you are standing tip toe, pausing at the apex of the motion.'
+        },
+        {
+          id: 3,
+          text: 'Repeat as necessary.'
+        }
+      ],
+      sets: []
+    },
+    {
+      id: 9,
+      name: 'Crunches',
+      image: '/images/exercises/gif/crunches.gif',
+      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      expanded: false,
+      description: [
+        {
+          id: 1,
+          text: 'Lay flat on your back with your knees bent and your feet flat on the ground, about a foot from your lower back.'
+        },
+        {
+          id: 2,
+          text: 'Place your fingertips on your temples with your palms facing out.'
+        },
+        {
+          id: 3,
+          text: 'Draw your belly into the base of your spine to engage the muscles, then raise your head and shoulders off the floor. Return to starting position and repeat.'
+        }
+      ],
+      sets: []
+    },
+    {
+      id: 10,
+      name: 'Laying Leg Raises',
+      image: '/images/exercises/gif/laying-leg-raises.gif',
+      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      expanded: false,
+      description: [
+        {
+          id: 1,
+          text: 'Lay on your back with your arms palms down on either side.'
+        },
+        {
+          id: 2,
+          text: 'Keep your legs together and as straight as possible.'
+        },
+        {
+          id: 3,
+          text: 'Slowly raise your legs to a 90° angle, pause at this position, or as high as you can reach your legs, and then slowly lower your legs back down.'
+        },
+        {
+          id: 4,
+          text: 'Duration of these movements should be slow so that you do not utilize momentum, enabling you to get the most out of the exercise.'
+        }
+      ],
+      sets: []
+    },
+    {
+      id: 11,
+      name: 'Forearm Plank',
+      image: '/images/exercises/gif/forearm-plank.gif',
+      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      expanded: false,
+      description: [
+        {
+          id: 1,
+          text: 'Place forearms on the ground with your elbows bent at a 90° angle aligned beneath your shoulders, with your arms parallel at shoulder-width.'
+        },
+        {
+          id: 2,
+          text: 'Your feet should be together, with only your toes touching the floor.'
+        },
+        {
+          id: 3,
+          text: 'Lift your belly off the floor and form a straight line from your heels to the crown of your head and hold.'
+        }
+      ],
+      sets: []
     }
   ]
 
