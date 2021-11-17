@@ -19,11 +19,10 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 import LayoutNavigation from '~/components/Layout/LayoutNavigation/LayoutNavigation.vue'
 import LayoutFooter from '~/components/Layout/LayoutFooter/LayoutFooter.vue'
-import ExerciseTimer from '~/components/Elements/ExerciseTimer/ExerciseTimer.vue'
 import { GlobalEventBus, GlobalEvents } from '~/events/GlobalEvents'
 @Component({
   components: {
-    ExerciseTimer,
+    ExerciseTimer: () => import('~/components/Elements/ExerciseTimer/ExerciseTimer.vue'),
     LayoutFooter,
     LayoutNavigation
   }
