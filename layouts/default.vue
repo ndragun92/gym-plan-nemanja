@@ -5,6 +5,7 @@
       <Nuxt />
     </div>
     <layout-footer />
+    <exercise-timer v-if="showTimer" :timer-seconds="timerSeconds" />
     <transition leave-active-class="animated fadeOut">
       <div v-if="layoutLoading" class="layout-loading">
         <img src="/images/fitx_logo.svg" style="width: 100px">
@@ -18,15 +19,20 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 import LayoutNavigation from '~/components/Layout/LayoutNavigation/LayoutNavigation.vue'
 import LayoutFooter from '~/components/Layout/LayoutFooter/LayoutFooter.vue'
+import ExerciseTimer from '~/components/Elements/ExerciseTimer/ExerciseTimer.vue'
+import { GlobalEventBus, GlobalEvents } from '~/events/GlobalEvents'
 @Component({
   components: {
+    ExerciseTimer,
     LayoutFooter,
     LayoutNavigation
   }
 })
 export default class DefaultLayout extends Vue {
   // Data
-  layoutLoading: boolean = true
+  layoutLoading: boolean = false
+  showTimer: boolean = false
+  timerSeconds: number = 30
 
   // Hooks
   async created () {
@@ -65,11 +71,27 @@ export default class DefaultLayout extends Vue {
         document.body.classList.remove('body--no-scroll')
       }, 2000)
     })
+    GlobalEventBus.$on(GlobalEvents.StartTimer, this.onStartTimer)
+  }
+
+  beforeDestroy () {
+    GlobalEventBus.$off(GlobalEvents.StartTimer, this.onStartTimer)
   }
 
   // Getters
   get currentDay (): number {
     return new Date().getDay()
+  }
+
+  // Methods
+  onStartTimer (timer: number) {
+    if (timer) {
+      this.timerSeconds = timer
+    }
+    this.showTimer = false
+    setTimeout(() => {
+      this.showTimer = true
+    }, 100)
   }
 }
 </script>

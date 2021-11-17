@@ -67,7 +67,7 @@
               type="button"
               class="flex-grow min-w-0 h-12 uppercase text-sm font-bold"
               :class="[set.completed ? 'bg-green-500 hover:bg-green-600': 'bg-yellow-500 hover:bg-yellow-600']"
-              @click="set.completed = !set.completed"
+              @click="onCompleteSet(set)"
               v-text="`${set.completed ? 'Completed' : 'Complete set'}`"
             />
             <button type="button" class="w-12 h-12 bg-red-500 hover:bg-red-600" @click="onDeleteSet(setIndex)">
@@ -86,7 +86,7 @@
 <script lang="ts">
 import { Component, Vue, Prop, Watch } from 'nuxt-property-decorator'
 import { GlobalEventBus, GlobalEvents } from '~/events/GlobalEvents'
-import { ExerciseInterface } from '~/interfaces/ExercisesInterface'
+import { ExerciseInterface, ExerciseSetInterface } from '~/interfaces/ExercisesInterface'
 
 @Component
 export default class ExerciseModal extends Vue {
@@ -118,6 +118,19 @@ export default class ExerciseModal extends Vue {
       el.scrollTop = el.scrollHeight
     })
     GlobalEventBus.$emit(GlobalEvents.UpdateStorage)
+  }
+
+  onCompleteSet (set: ExerciseSetInterface) {
+    set.completed = !set.completed
+    let timer = 30
+    if (this.exercise?.sets.length) {
+      if (this.exercise.sets.filter(obj => obj.completed).length === this.exercise.sets.length) {
+        timer = 60
+      }
+    }
+    if (set.completed) {
+      GlobalEventBus.$emit(GlobalEvents.StartTimer, timer)
+    }
   }
 
   onDeleteSet (setIndex: number) {
