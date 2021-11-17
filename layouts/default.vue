@@ -58,7 +58,7 @@ export default class DefaultLayout extends Vue {
         await this.$router.push('/resting')
         break
       default:
-        await this.$router.push('/monday')
+        await this.$router.push('/monday') // Default day is monday
     }
   }
 
