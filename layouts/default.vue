@@ -30,7 +30,7 @@ import { GlobalEventBus, GlobalEvents } from '~/events/GlobalEvents'
 })
 export default class DefaultLayout extends Vue {
   // Data
-  layoutLoading: boolean = false
+  layoutLoading: boolean = true
   showTimer: boolean = false
   timerSeconds: number = 30
 
