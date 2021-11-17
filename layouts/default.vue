@@ -34,8 +34,23 @@ export default class DefaultLayout extends Vue {
       case 1:
         await this.$router.push('/monday')
         break
-      case 20:
+      case 2:
         await this.$router.push('/tuesday')
+        break
+      case 3:
+        await this.$router.push('/wednesday')
+        break
+      case 4:
+        await this.$router.push('/thursday')
+        break
+      case 5:
+        await this.$router.push('/friday')
+        break
+      case 6:
+        await this.$router.push('/resting')
+        break
+      case 7:
+        await this.$router.push('/resting')
         break
       default:
         await this.$router.push('/monday')
