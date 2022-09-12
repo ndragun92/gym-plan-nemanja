@@ -22,8 +22,8 @@ export default class PageMonday extends Vue {
     {
       id: 1,
       name: 'Dumbbell Curl',
-      image: '/images/exercises/gif/dumbbell-curl.gif',
-      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
+      image: require('~/static/images/exercises/gif/dumbbell-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/dumbbell-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -44,8 +44,8 @@ export default class PageMonday extends Vue {
     {
       id: 2,
       name: 'Hammer Curl',
-      image: '/images/exercises/gif/hammer-curl.gif',
-      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
+      image: require('~/static/images/exercises/gif/hammer-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/dumbbell-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -66,8 +66,8 @@ export default class PageMonday extends Vue {
     {
       id: 3,
       name: 'Barbell Curl',
-      image: '/images/exercises/gif/barbell-curl.gif',
-      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
+      image: require('~/static/images/exercises/gif/barbell-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/dumbbell-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -92,8 +92,8 @@ export default class PageMonday extends Vue {
     {
       id: 4,
       name: 'Wrist Curl',
-      image: '/images/exercises/gif/wrist-curl.gif',
-      explainImage: '/images/exercises/gif/wrist-curl-explain.png',
+      image: require('~/static/images/exercises/gif/wrist-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/wrist-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -114,8 +114,8 @@ export default class PageMonday extends Vue {
     {
       id: 5,
       name: 'Barbell Wrist Curl',
-      image: '/images/exercises/gif/barbell-wrist-curl.gif',
-      explainImage: '/images/exercises/gif/wrist-curl-explain.png',
+      image: require('~/static/images/exercises/gif/barbell-wrist-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/wrist-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -144,8 +144,8 @@ export default class PageMonday extends Vue {
     {
       id: 6,
       name: 'Seated DB Shrugs',
-      image: '/images/exercises/gif/seated-db-shrugs.gif',
-      explainImage: '/images/exercises/gif/seated-db-shrugs-explain.png',
+      image: require('~/static/images/exercises/gif/seated-db-shrugs.gif'),
+      explainImage: require('~/static/images/exercises/gif/seated-db-shrugs-explain.png'),
       expanded: false,
       description: [
         {
@@ -166,8 +166,8 @@ export default class PageMonday extends Vue {
     {
       id: 7,
       name: 'Seated Dumbbell Shoulder Press',
-      image: '/images/exercises/gif/seated-dumbbell-shoulder-press.gif',
-      explainImage: '/images/exercises/gif/seated-dumbbell-shoulder-press-explain.png',
+      image: require('~/static/images/exercises/gif/seated-dumbbell-shoulder-press.gif'),
+      explainImage: require('~/static/images/exercises/gif/seated-dumbbell-shoulder-press-explain.png'),
       expanded: false,
       description: [
         {
@@ -188,8 +188,8 @@ export default class PageMonday extends Vue {
     {
       id: 8,
       name: 'Side Lateral Raises',
-      image: '/images/exercises/gif/side-lateral-raises.gif',
-      explainImage: '/images/exercises/gif/seated-dumbbell-shoulder-press-explain.png',
+      image: require('~/static/images/exercises/gif/side-lateral-raises.gif'),
+      explainImage: require('~/static/images/exercises/gif/seated-dumbbell-shoulder-press-explain.png'),
       expanded: false,
       description: [
         {
@@ -210,8 +210,8 @@ export default class PageMonday extends Vue {
     {
       id: 9,
       name: 'Front Raises',
-      image: '/images/exercises/gif/front-raises.gif',
-      explainImage: '/images/exercises/gif/seated-dumbbell-shoulder-press-explain.png',
+      image: require('~/static/images/exercises/gif/front-raises.gif'),
+      explainImage: require('~/static/images/exercises/gif/seated-dumbbell-shoulder-press-explain.png'),
       expanded: false,
       description: [
         {
@@ -232,8 +232,8 @@ export default class PageMonday extends Vue {
     {
       id: 10,
       name: 'Crunches',
-      image: '/images/exercises/gif/crunches.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/crunches.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {
@@ -254,8 +254,8 @@ export default class PageMonday extends Vue {
     {
       id: 11,
       name: 'Laying Leg Raises',
-      image: '/images/exercises/gif/laying-leg-raises.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/laying-leg-raises.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {
@@ -280,8 +280,8 @@ export default class PageMonday extends Vue {
     {
       id: 12,
       name: 'Forearm Plank',
-      image: '/images/exercises/gif/forearm-plank.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/forearm-plank.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {

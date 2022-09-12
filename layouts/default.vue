@@ -8,7 +8,7 @@
     <exercise-timer v-if="showTimer" :timer-seconds="timerSeconds" />
     <transition leave-active-class="animated fadeOut">
       <div v-if="layoutLoading" class="layout-loading">
-        <img src="/images/fitx_logo.svg" style="width: 100px">
+        <img src="~static/images/fitx_logo.svg" style="width: 100px">
         <div class="layout-loading__loader" />
       </div>
     </transition>

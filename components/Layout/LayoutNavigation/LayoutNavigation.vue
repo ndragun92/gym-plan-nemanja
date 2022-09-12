@@ -2,7 +2,7 @@
   <nav class="layout-navigation" :class="{'layout-navigation--scrolled': scrollPosition > 80}">
     <div class="container mx-auto flex items-center justify-between h-12">
       <div>
-        <img src="/images/fitx_logo.svg" style="width: 40px">
+        <img src="~static/images/fitx_logo.svg" style="width: 40px">
       </div>
       <div>
         <ul class="flex items-center gap-2 text-sm">
