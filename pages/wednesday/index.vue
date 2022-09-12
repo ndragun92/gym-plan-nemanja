@@ -22,8 +22,8 @@ export default class PageWednesday extends Vue {
     {
       id: 1,
       name: 'Barbell bench press',
-      image: '/images/exercises/gif/barbell-bench-press.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      image: require('~/static/images/exercises/gif/barbell-bench-press.gif'),
+      explainImage: require('~/static/images/exercises/gif/barbell-bench-press-explain.png'),
       expanded: false,
       description: [
         {
@@ -44,8 +44,8 @@ export default class PageWednesday extends Vue {
     {
       id: 2,
       name: 'Barbell bench press narrow',
-      image: '/images/exercises/gif/barbell-bench-press.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      image: require('~/static/images/exercises/gif/barbell-bench-press.gif'),
+      explainImage: require('~/static/images/exercises/gif/barbell-bench-press-explain.png'),
       expanded: false,
       description: [
         {
@@ -66,8 +66,8 @@ export default class PageWednesday extends Vue {
     {
       id: 3,
       name: 'Dumbbell bench press',
-      image: '/images/exercises/gif/dumbbell-bench-press.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      image: require('~/static/images/exercises/gif/dumbbell-bench-press.gif'),
+      explainImage: require('~/static/images/exercises/gif/barbell-bench-press-explain.png'),
       expanded: false,
       description: [
         {
@@ -88,8 +88,8 @@ export default class PageWednesday extends Vue {
     {
       id: 4,
       name: 'Dumbbell bench press narrow',
-      image: '/images/exercises/gif/dumbbell-bench-press.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      image: require('~/static/images/exercises/gif/dumbbell-bench-press.gif'),
+      explainImage: require('~/static/images/exercises/gif/barbell-bench-press-explain.png'),
       expanded: false,
       description: [
         {
@@ -110,8 +110,8 @@ export default class PageWednesday extends Vue {
     {
       id: 5,
       name: 'Dumbbell Flys',
-      image: '/images/exercises/gif/dumbbell-flys.gif',
-      explainImage: '/images/exercises/gif/barbell-bench-press-explain.png',
+      image: require('~/static/images/exercises/gif/dumbbell-flys.gif'),
+      explainImage: require('~/static/images/exercises/gif/barbell-bench-press-explain.png'),
       expanded: false,
       description: [
         {
@@ -136,8 +136,8 @@ export default class PageWednesday extends Vue {
     {
       id: 6,
       name: 'Lat pull down',
-      image: '/images/exercises/gif/lat-pull-down.gif',
-      explainImage: '/images/exercises/gif/lat-pull-down-explain.jpg',
+      image: require('~/static/images/exercises/gif/lat-pull-down.gif'),
+      explainImage: require('~/static/images/exercises/gif/lat-pull-down-explain.jpg'),
       expanded: false,
       description: [],
       sets: []
@@ -145,8 +145,8 @@ export default class PageWednesday extends Vue {
     {
       id: 7,
       name: 'Lat pull back',
-      image: '/images/exercises/gif/lat-pull-back.gif',
-      explainImage: '/images/exercises/gif/lat-pull-down-explain.jpg',
+      image: require('~/static/images/exercises/gif/lat-pull-back.gif'),
+      explainImage: require('~/static/images/exercises/gif/lat-pull-down-explain.jpg'),
       expanded: false,
       description: [],
       sets: []
@@ -154,8 +154,8 @@ export default class PageWednesday extends Vue {
     {
       id: 8,
       name: 'Seated row narrow grip',
-      image: '/images/exercises/gif/seated-row-narrow-grip.gif',
-      explainImage: '/images/exercises/gif/lat-pull-down-explain.jpg',
+      image: require('~/static/images/exercises/gif/seated-row-narrow-grip.gif'),
+      explainImage: require('~/static/images/exercises/gif/lat-pull-down-explain.jpg'),
       expanded: false,
       description: [],
       sets: []
@@ -163,8 +163,8 @@ export default class PageWednesday extends Vue {
     {
       id: 9,
       name: 'Dumbbell Row',
-      image: '/images/exercises/gif/dumbbell-row.gif',
-      explainImage: '/images/exercises/gif/lat-pull-down-explain.jpg',
+      image: require('~/static/images/exercises/gif/dumbbell-row.gif'),
+      explainImage: require('~/static/images/exercises/gif/lat-pull-down-explain.jpg'),
       expanded: false,
       description: [
         {
@@ -189,8 +189,8 @@ export default class PageWednesday extends Vue {
     {
       id: 10,
       name: 'Kettlebells Row',
-      image: '/images/exercises/gif/kattlebells-row.gif',
-      explainImage: '/images/exercises/gif/lat-pull-down-explain.jpg',
+      image: require('~/static/images/exercises/gif/kattlebells-row.gif'),
+      explainImage: require('~/static/images/exercises/gif/lat-pull-down-explain.jpg'),
       expanded: false,
       description: [
         {
@@ -211,8 +211,8 @@ export default class PageWednesday extends Vue {
     {
       id: 11,
       name: 'Crunches',
-      image: '/images/exercises/gif/crunches.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/crunches.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {
@@ -233,8 +233,8 @@ export default class PageWednesday extends Vue {
     {
       id: 12,
       name: 'Laying Leg Raises',
-      image: '/images/exercises/gif/laying-leg-raises.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/laying-leg-raises.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {
@@ -259,8 +259,8 @@ export default class PageWednesday extends Vue {
     {
       id: 13,
       name: 'Forearm Plank',
-      image: '/images/exercises/gif/forearm-plank.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/forearm-plank.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {

@@ -22,8 +22,8 @@ export default class PageFriday extends Vue {
     {
       id: 1,
       name: 'Dumbbell Curl',
-      image: '/images/exercises/gif/dumbbell-curl.gif',
-      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
+      image: require('~/static/images/exercises/gif/dumbbell-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/dumbbell-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -44,8 +44,8 @@ export default class PageFriday extends Vue {
     {
       id: 2,
       name: 'Hammer Curl',
-      image: '/images/exercises/gif/hammer-curl.gif',
-      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
+      image: require('~/static/images/exercises/gif/hammer-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/dumbbell-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -66,8 +66,8 @@ export default class PageFriday extends Vue {
     {
       id: 3,
       name: 'Barbell Curl',
-      image: '/images/exercises/gif/barbell-curl.gif',
-      explainImage: '/images/exercises/gif/dumbbell-curl-explain.png',
+      image: require('~/static/images/exercises/gif/barbell-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/dumbbell-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -92,8 +92,8 @@ export default class PageFriday extends Vue {
     {
       id: 4,
       name: 'Back Barbell Wrist Curl',
-      image: '/images/exercises/gif/back-barbell-wrist-curl.gif',
-      explainImage: '/images/exercises/gif/wrist-curl-explain.png',
+      image: require('~/static/images/exercises/gif/back-barbell-wrist-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/wrist-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -114,8 +114,8 @@ export default class PageFriday extends Vue {
     {
       id: 5,
       name: 'Reverse Curl',
-      image: '/images/exercises/gif/reverse-curl.gif',
-      explainImage: '/images/exercises/gif/wrist-curl-explain.png',
+      image: require('~/static/images/exercises/gif/reverse-curl.gif'),
+      explainImage: require('~/static/images/exercises/gif/wrist-curl-explain.png'),
       expanded: false,
       description: [
         {
@@ -136,8 +136,8 @@ export default class PageFriday extends Vue {
     {
       id: 6,
       name: 'Squats',
-      image: '/images/exercises/gif/squats.gif',
-      explainImage: '/images/exercises/gif/squats-explain.png',
+      image: require('~/static/images/exercises/gif/squats.gif'),
+      explainImage: require('~/static/images/exercises/gif/squats-explain.png'),
       expanded: false,
       description: [
         {
@@ -162,8 +162,8 @@ export default class PageFriday extends Vue {
     {
       id: 7,
       name: 'Forward Lunges',
-      image: '/images/exercises/gif/forward-lunges.gif',
-      explainImage: '/images/exercises/gif/squats-explain.png',
+      image: require('~/static/images/exercises/gif/forward-lunges.gif'),
+      explainImage: require('~/static/images/exercises/gif/squats-explain.png'),
       expanded: false,
       description: [
         {
@@ -188,8 +188,8 @@ export default class PageFriday extends Vue {
     {
       id: 8,
       name: 'Calf Raises',
-      image: '/images/exercises/gif/calf-raises.gif',
-      explainImage: '/images/exercises/gif/calf-raises-explain.png',
+      image: require('~/static/images/exercises/gif/calf-raises.gif'),
+      explainImage: require('~/static/images/exercises/gif/calf-raises-explain.png'),
       expanded: false,
       description: [
         {
@@ -210,8 +210,8 @@ export default class PageFriday extends Vue {
     {
       id: 9,
       name: 'Crunches',
-      image: '/images/exercises/gif/crunches.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/crunches.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {
@@ -232,8 +232,8 @@ export default class PageFriday extends Vue {
     {
       id: 10,
       name: 'Laying Leg Raises',
-      image: '/images/exercises/gif/laying-leg-raises.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/laying-leg-raises.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {
@@ -258,8 +258,8 @@ export default class PageFriday extends Vue {
     {
       id: 11,
       name: 'Forearm Plank',
-      image: '/images/exercises/gif/forearm-plank.gif',
-      explainImage: '/images/exercises/gif/crunches-explain.jpg',
+      image: require('~/static/images/exercises/gif/forearm-plank.gif'),
+      explainImage: require('~/static/images/exercises/gif/crunches-explain.jpg'),
       expanded: false,
       description: [
         {
