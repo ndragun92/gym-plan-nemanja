@@ -4,6 +4,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-mode
   */
   ssr: false,
+  // Router for gh pages
   router: {
     base: '/gym-plan-nemanja/'
   },
